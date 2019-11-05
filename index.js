@@ -43,7 +43,7 @@ const getDogPic = async () => {
     const imgs = all.map(promise => promise.body.message);
 
     await writeFilePromise("dog-img.txt", imgs.join("\n"));
-    console.log("Dog image URL written!");
+    console.log("Dog image URLs written!");
   } catch (err) {
     console.log(err);
 
